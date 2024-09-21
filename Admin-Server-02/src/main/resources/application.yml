@@ -1,0 +1,5 @@
+spring:
+  application:
+   name: Admin-Server-02
+server:
+  port: 2222

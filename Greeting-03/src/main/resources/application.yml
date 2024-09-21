@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: GREETING-SERVICE
+  boot:
+    admin:
+      client:
+        url: http://localhost:2222/
+
+
+server:
+  port: 4444
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
